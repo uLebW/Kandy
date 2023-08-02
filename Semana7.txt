@@ -1,0 +1,223 @@
+---CSS Pagina 1
+
+.barra-lateral {
+  width: 25%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+  /* Asegura que la barra lateral esté por debajo de la imagen */
+}
+
+.barra-lateral::before {
+  content: "";
+  display: block;
+  background-image: url('kandy.png');
+  /* Reemplaza con la ruta correcta de tu imagen */
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: center width: 50%;
+  height: 50%;
+  /* Ajusta la altura de la imagen según tus necesidades */
+  position: relative;
+  z-index: 2;
+  /* Asegura que la imagen esté por encde la barra lateral */
+}
+
+.imagen-izquierda {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90vh; /* 70% de la altura de la ventana */
+  width: 30%; /* 30% del ancho de la ventana */
+  margin-top: 36px; /* Separación superior de los bordes de la página */
+  margin-left: 55px; /* Separación izquierda de los bordes de la página */
+}
+
+.imagen-arriba {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40vh; 
+  width: 30%; 
+  margin-top: 36px; 
+  margin-left: 39%; 
+}
+
+.texto-ubicado {
+  position: absolute;
+  top: 57%; /* Ubicación vertical del texto */
+  left: 39%; /* Ubicación horizontal del texto */
+  transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+  /* Añade otros estilos personalizados según tus necesidades */
+}
+
+.texto-ubicado h1 {
+  font-family: "Cooper Black", sans-serif;
+  font-size: 40px;
+}
+
+.texto-ubicado p {
+  font-family: "Aharoni", sans-serif;
+  font-size: 17 px;
+}
+
+--- HTML Pagina 1
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="contenido" class="barra-lateral">
+        <link rel="stylesheet" href="info.css">
+        <div class="imagen-izquierda"></div>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="ropa1.jpg" alt="Imagen izquierda" class="imagen-izquierda">
+    <img src="ropa2.jpeg" alt="Imagen izquierda" class="imagen-arriba">
+    <div class="texto-ubicado">
+        <h1>Nuestra página</h1>
+        <p>Áqui encuentras todo tipo de <br> ropa que necesitas, para todo <br> tipo de gustos, géneros, etc.</p>
+      </div>
+  </body>
+  
+
+</html>
+
+--- CSS Pagina 2
+
+.texto-ubicado {
+    position: absolute;
+    top: 10%; /* Ubicación vertical del texto */
+    left: 5%; /* Ubicación horizontal del texto */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+  }
+  
+  .texto-ubicado h1 {
+    font-family: "Cooper Black", sans-serif;
+    font-size: 40px;
+  }
+  
+  .texto-ubicado p {
+    font-family: "Aharoni", sans-serif;
+    font-size: 17 px;
+  }
+
+  .imagen-izquierda {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 35vh; /* 70% de la altura de la ventana */
+    width: 30%; /* 30% del ancho de la ventana */
+    margin-top: 10%; /* Separación superior de los bordes de la página */
+    margin-left: 55px; /* Separación izquierda de los bordes de la página */
+  }
+
+  .texto-img1 {
+    position: absolute;
+    top: 60%; /* Ubicación vertical del texto */
+    left: 4%; /* Ubicación horizontal del texto */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+  }
+  
+  .texto-img1 h1 {
+    font-family: "Cooper Black", sans-serif;
+    font-size: 40px;
+  }
+  
+  .texto-img1 p {
+    font-family: "Aharoni", sans-serif;
+    font-size: 17 px;
+  }
+
+  .imagen-centro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 35vh; /* 70% de la altura de la ventana */
+    width: 30%; /* 30% del ancho de la ventana */
+    margin-top: 10%; /* Separación superior de los bordes de la página */
+    margin-left: 600px; /* Separación izquierda de los bordes de la página */
+  }
+
+  .texto-img2 {
+    position: absolute;
+    top: 60%; /* Ubicación vertical del texto */
+    left: 40%; /* Ubicación horizontal del texto */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+  }
+  
+  .texto-img2 h1 {
+    font-family: "Cooper Black", sans-serif;
+    font-size: 40px;
+  }
+  
+  .texto-img2 p {
+    font-family: "Aharoni", sans-serif;
+    font-size: 17 px;
+  }
+
+  form input{
+    width: 250px;
+    padding: 5px 10px;
+     border: 2px solid black;
+     border-radius: 4px;
+     display: block;
+  }
+
+  form input[input="button"]{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 150px;
+    left: 205px;
+  }
+
+  --- HTML Pagina 2
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="conjuntos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="vin.jpeg" alt="Imagen izquierda" class="imagen-izquierda">
+    <img src="mod.jpeg" alt="Imagen izquierda" class="imagen-centro">
+
+    <div class="texto-ubicado">
+    <h1>Novedades</h1>
+    </div>
+    <div class="texto-img1">
+        <h1>Conjunto Vintage </h1>
+        </div>
+    <div class="texto-img1">
+    <p><br><br><br><br><br><br><br><br>Este conjunto lo puedes utilizar para lugares o fiesta <br>con tematicas antiguas</p>
+    <form>
+        <input type="button" value="Haz clic aquí">
+      </form>
+    </div>
+    
+    <div class="texto-img2">
+        <h1>Conjunto Moderno </h1>
+        </div>
+    <div class="texto-img2">
+    <p><br><br><br><br><br><br><br><br> Este conjunto de utliza para ocasiones <br>un poco mas informales</p>
+    <form>
+        <input type="button" value="Haz clic aquí">
+      </form>
+    </div>
+      
+</body>
+</html>

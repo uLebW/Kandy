@@ -1,0 +1,54 @@
+.barra-lateral {
+    width: 25%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+    /* Asegura que la barra lateral esté por debajo de la imagen */
+  }
+  
+  .barra-lateral::before {
+    content: "";
+    display: block;
+    background-image: url('kandy.png');
+    /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: center width 50%;
+    height: 50%;
+    /* Ajusta la altura de la imagen según tus necesidades */
+    position: relative;
+    z-index: 2;
+    /* Asegura que la imagen esté por encde la barra lateral */
+  }
+
+  .imagen-izquierda {
+    position: sticky;
+    
+    height: 30vh;
+    /* 70% de la altura de la ventana */
+    width: 30%;
+    /* 30% del ancho de la ventana */
+    margin-top: 1%;
+    /* Separación superior de los bordes de la página */
+    margin-left: 53;
+    /* Separación izquierda de los bordes de la página */
+  }
+
+  .texto-img h1 {
+    font-family: "Cooper Black", sans-serif;
+    font-size: 40px;
+  }
+
+  .texto-img p {
+    font-family: "Aharoni", sans-serif;
+    font-size: 17 px;
+  }
+
+  .texto-img1 p {
+    font-family: "Aharoni", sans-serif;
+    font-size: 17 px;
+  }

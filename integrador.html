@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar cuenta</title>
+
+    <link rel="stylesheet" href="integradorCSS.css" type="text/css">
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Crear cuenta</h1>
+        <p>¿Ya tienes cuenta? <a href="integraLogin.html">Inicia Sesión</a></p>
+        <form action="integraRe.php" method="post" id="fomr" name="fomr">
+            Nombre:<br>
+            <input type="text" id="usario" name="nom" required>
+            <br>
+            Email:<br>
+            <input type="email" id="cuenta" name="coreo" required placeholder="usario@ejemplo.com">
+            <br>
+            Contraseña:<br>
+            <input type="password" id="pass" name="contra" required>
+            <br>
+            Fecha de nacimiento:<br>
+            <input type="date" id="nacimiento" name="fecha" required>
+            <br><br>
+            <input type="button" id="generar" name="gene" value="Generar clave" onclick="claveR()"> 
+            Clave de identificación:
+            <input type="text" id="clave" name="clave" value="" readonly required>
+            <br><br>
+            <input type="submit" value="Registrar" name="registrar">
+        </form>
+        <script>
+            function claveR(){
+                var nom=document.getElementById('usario').value;
+                var numer=document.getElementById('nacimiento').value;
+                var claveB=nom.substring(0,4)+numer.substring(8,10)+numer.substring(2,4)+numer.substring(5,7);
+                document.getElementById('clave').value=claveB;
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos</title>
+    <style>
+body{
+    font-size:x-large;
+    background: linear-gradient(70deg,grey,10%,white);
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50vh;
+    
+}
+.cont2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20vh;
+}
+.izquierda{
+    display: flex;
+    background-color: rgb(219, 209, 209);
+    place-items: center;
+    justify-content: center;
+    
+}
+.dere{
+    display: flex;
+    place-items: center;
+    justify-content: right;
+}
+.izqui2{
+    display: flex;
+    place-items: left;
+}
+input{
+    width: 220px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    background-color:  rgb(219, 209, 209);
+}
+    </style>
+    <link rel="stylesheet" href="nav.css" type="text/css">
+</head>
+<body>
+     <div class="cont2">
+        <div class="izqui2">
+            <div id="header">
+                    <ul class="nav">
+                            <li><a href="IntePrinci.html">Home</a></li>
+                            <li><a href="Noso.html">¿Quienes somos?</a></li>
+                            <li><a href="">Contactar</a>
+                                    <ul>
+                                        <li><a href="">Facebook</a></li>
+                                        <li><a href="">Instagram</a></li>
+                                    </ul>
+                            </li>
+                            <li><a href="conjuntos.html">Galeria</a></li>
+                            <li><a href="compra.html">Listado</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="dere">
+            <img src="logo.PNG" align="left" width="100px" height="100px">
+        </div>
+     </div>
+
+     <div class="cont">
+        <div class="izquierda">
+            <pre>
+            <h1>Kandy's Bazar</h1><br>
+En este sitio web encontraras todo
+tipo de ropa para todas las 
+ocasiones.
+            </pre> 
+        </div>
+        <div class="dere">
+            <div>
+                <img src="ropa1.jpg" height="60%" width="60%">
+            </div>
+        </div>
+     </div>
+</body>
+</html>

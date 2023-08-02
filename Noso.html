@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.cont{
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+    height: 70vh;
+}
+.cont2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 30vh;
+}
+.izquierda{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.dere{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    background-color:  rgb(219, 209, 209);
+}
+p{
+    font-family: 'Franklin Gothic Medium';
+}
+a{
+    justify-content: right;
+    place-items: right;
+}
+body{
+    background: linear-gradient(70deg,grey,10%,white);
+    font-size: large;
+}
+    </style>
+
+</head>
+<body>
+    <div class="cont2">
+        <div class="izquierda">
+            <pre>
+            <h1>Tu tienda favorita y disponible
+en todo momento
+            </h1><br>
+            </pre> 
+        </div>
+        <div class="dere">
+            <div>
+                <img src="img/logo.PNG" height="120px" width="120px" align="left">
+                <input type="search" placeholder="Busqueda">
+                <br><br><br><br>
+            </div>
+        </div>
+     </div>
+     <div class="cont">
+        <div class="izquierda">
+            <img src="img/montaña.jpeg" height="90%" width="90%" >
+        </div>
+        <div class="dere">
+            <div>
+                <h1>Nosotros Somos</h1>
+                <p>Somos una tienda en línea en la cual podrás
+                    encontrar todo tipo de ropa que quieras
+                    ,para todas las ocasiones.
+                    <br><br>
+                    El objetivo principal es comprender las
+                    necesidades y preferencias de los padres
+                    y cuidadores al momento de comprar ropa para
+                    sus hijos, asi como también entender las tendecias
+                    y demandas del mercado en este segmento.
+                    <br><br>
+                    Esto nos permitirá desarrollar estrategias efectivas
+                    para establecer una tienda de ropa para niños que sea
+                    exitosa y atractiva para nuestros clientes potenciales.<br><br>
+                    Con este objetivo, es importante realizar un análisis
+                    profundo de diferentes aspectos.
+                </p>
+                <br><input type="button" value="Saber más"> 
+                <br><a href="IntePrinci.html"><img src="img/felca.png" height="30px" width="60px"></a>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
