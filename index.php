@@ -1,6 +1,6 @@
 <?php
 	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
+		$uri = 'https://https://ulebw.github.io/Kandy/Integrador.html';
 	} else {
 		$uri = 'http://';
 	}
